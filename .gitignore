@@ -4,4 +4,5 @@ node_modules
 coverage
 reports
 */**/local.json
+.stryker-tmp
 #*/**/local.js
