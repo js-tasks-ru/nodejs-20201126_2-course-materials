@@ -78,7 +78,7 @@ userSchema.pre("save", async function () {
 });
 
 userSchema.methods.checkPassword = async function (password) {
-  const hash = createHash(password, this.salt);
+  const hash = await createHash(password, this.salt);
   return hash === this.password;
 };
 

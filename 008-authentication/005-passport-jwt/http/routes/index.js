@@ -7,6 +7,7 @@ router.post('/register', register);
 router.post('/refresh', refresh);
 
 router.get('/oauth/:provider', oauth);
+router.post('/oauth/:provider', oauth);
 router.get('/oauth/:provider/callback', oauth);
 
 router.get('/user', jwt, user);

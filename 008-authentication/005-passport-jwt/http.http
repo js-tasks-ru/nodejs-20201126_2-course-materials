@@ -1,6 +1,5 @@
 GET http://localhost:3000/api/user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZmRiYmIyMzNlY2EwYmM2ZjU5ZmIxMmIiLCJpYXQiOjE2MDgyMzYwODEsImV4cCI6MTYwODIzNjExMX0.V7KPggxgRCsZD2dxPPOUIuVYxx_O4GJXVhmZih7ujls
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZjdmNjJhOTEzODZmNjU2MjhmNDEwOWQiLCJpYXQiOjE2MDg2NTk0NTYsImV4cCI6MTYwODY1OTQ4Nn0.xYobqqVnux-zi4AcL8K0gRPZ160GUZugHZ0u8BlxiLM
 
 ###
 
@@ -8,12 +7,11 @@ POST http://localhost:3000/api/refresh
 Content-Type: application/json
 
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZmRiYmIyMzNlY2EwYmM2ZjU5ZmIxMmIiLCJpYXQiOjE2MDgyMzYzNTgsImV4cCI6MTYwODIzNjM4OH0.y_fko-f8oAcmXNDcUAQbmruQ4JNxDg8TB1sZ36DxTVU",
-  "refreshToken": "2ef40d83-38f8-4d55-b10e-1851372ad7be"
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZjdmNjJhOTEzODZmNjU2MjhmNDEwOWQiLCJpYXQiOjE2MDg2NTk0NTYsImV4cCI6MTYwODY1OTQ4Nn0.xYobqqVnux-zi4AcL8K0gRPZ160GUZugHZ0u8BlxiLM",
+  "refreshToken": "d19ec9f9-e128-4f01-87f3-546dc99ca19b"
 }
 
-###
-
+### register
 POST http://localhost:3000/api/register
 Content-Type: application/json
 
@@ -25,5 +23,9 @@ Content-Type: application/json
 ###
 
 POST http://localhost:3000/api/oauth/local
+Content-Type: application/json
 
-
+{
+  "login": "login",
+  "password": "1111"
+}
